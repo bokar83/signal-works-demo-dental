@@ -292,7 +292,7 @@
     }
     .services-pin-wrap {
       position: relative;
-      height: 500vh;
+      height: 300vh;
     }
     .services-sticky {
       position: sticky;
@@ -303,15 +303,15 @@
     }
     .services-track {
       display: flex;
-      width: 400vw;
+      width: 200vw;
       height: 100%;
       will-change: transform;
     }
     .service-scene {
-      width: 100vw;
+      width: 50vw;
       height: 100%;
       display: flex; flex-direction: column; justify-content: center;
-      padding: 0 10%;
+      padding: 0 6%;
       flex-shrink: 0;
       position: relative;
     }
@@ -1064,16 +1064,21 @@
     const dots = document.querySelectorAll('.progress-dot');
     const SCENE_COUNT = 4;
 
+    // 4 scenes at 50vw each = 200vw total track.
+    // Visible window = 100vw (2 scenes). Total scroll = 200vw - 100vw = 100vw (2 steps of 50vw).
+    const SCROLL_DIST = window.innerWidth * (SCENE_COUNT / 2);
+
     ScrollTrigger.create({
       trigger: pinWrap,
       start: 'top top',
-      end: () => '+=' + (window.innerWidth * (SCENE_COUNT - 1)),
+      end: () => '+=' + SCROLL_DIST,
       pin: '#servicesSticky',
       scrub: 1.2,
       onUpdate: self => {
-        const xPx = -self.progress * window.innerWidth * (SCENE_COUNT - 1);
+        const xPx = -self.progress * SCROLL_DIST;
         gsap.set(servicesTrack, { x: xPx });
-        const activeIdx = Math.round(self.progress * (SCENE_COUNT - 1));
+        // Active dot: which pair is leading (0=scenes 1&2, 1=scenes 2&3, 2=scenes 3&4)
+        const activeIdx = Math.round(self.progress * (SCENE_COUNT - 2));
         dots.forEach((d, i) => d.classList.toggle('active', i === activeIdx));
       }
     });
