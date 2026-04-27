@@ -290,74 +290,83 @@
       background: var(--navy);
       position: relative;
     }
-    .services-pin-wrap {
-      position: relative;
-      height: 300vh;
+    .services-grid-wrap {
+      padding: 100px 5%;
+      background: var(--navy);
     }
-    .services-sticky {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow: hidden;
-      display: flex; align-items: center;
+    .services-grid-header {
+      margin-bottom: 64px;
     }
-    .services-track {
-      display: flex;
-      width: 200vw;
-      height: 100%;
-      will-change: transform;
+    .services-grid-header .section-eyebrow {
+      font-family: var(--f-body); font-size: .72rem; font-weight: 700;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: var(--sky); display: flex; align-items: center; gap: 10px;
+      margin-bottom: 16px;
+    }
+    .services-grid-header .section-eyebrow::before {
+      content: ''; width: 28px; height: 1px; background: var(--sky);
+    }
+    .services-grid-header h2 {
+      font-family: var(--f-head); font-style: italic;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700; color: var(--white); line-height: 1.1;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2px;
     }
     .service-scene {
-      width: 50vw;
-      height: 100%;
-      display: flex; flex-direction: column; justify-content: center;
-      padding: 0 6%;
-      flex-shrink: 0;
       position: relative;
+      padding: 48px 36px 52px;
+      background: rgba(255,255,255,.04);
+      border-top: 2px solid rgba(91,200,245,0);
+      overflow: hidden;
+      transition: background .35s, border-color .35s;
+      cursor: default;
     }
-    .service-scene:not(:last-child)::after {
+    .service-scene::before {
       content: '';
-      position: absolute; right: 0; top: 15%; bottom: 15%;
-      width: 1px; background: rgba(255,255,255,.09);
+      position: absolute; bottom: 0; left: 0; right: 0;
+      height: 0;
+      background: linear-gradient(to top, rgba(91,200,245,.08), transparent);
+      transition: height .45s ease;
     }
+    .service-scene:hover {
+      background: rgba(91,200,245,.07);
+      border-color: var(--sky);
+    }
+    .service-scene:hover::before { height: 100%; }
     .service-num {
       font-family: var(--f-head); font-style: italic;
-      font-size: clamp(5rem, 13vw, 11rem);
-      font-weight: 700; line-height: 1;
-      color: rgba(91,200,245,.15);
-      margin-bottom: 16px;
-      display: block;
+      font-size: 4rem; font-weight: 700; line-height: 1;
+      color: rgba(91,200,245,.18);
+      margin-bottom: 24px; display: block;
+      transition: color .35s;
     }
+    .service-scene:hover .service-num { color: rgba(91,200,245,.45); }
     .service-tag {
-      font-family: var(--f-body); font-size: .7rem; font-weight: 700;
+      font-family: var(--f-body); font-size: .68rem; font-weight: 700;
       letter-spacing: .18em; text-transform: uppercase;
-      color: var(--sky); margin-bottom: 14px;
+      color: var(--sky); margin-bottom: 12px;
     }
     .service-name {
       font-family: var(--f-head); font-style: italic;
-      font-size: clamp(2.4rem, 5vw, 4.5rem);
-      font-weight: 700; line-height: 1.05;
-      color: var(--white); margin-bottom: 20px;
+      font-size: clamp(1.5rem, 2.2vw, 2rem);
+      font-weight: 700; line-height: 1.1;
+      color: var(--white); margin-bottom: 16px;
+      transition: transform .35s ease;
     }
+    .service-scene:hover .service-name { transform: translateY(-4px); }
     .service-desc {
-      font-size: 1.05rem; color: rgba(255,255,255,.62);
-      line-height: 1.78; max-width: 480px;
+      font-size: .92rem; color: rgba(255,255,255,.58);
+      line-height: 1.75;
     }
-    .services-footer {
-      position: absolute; bottom: 40px; left: 0; right: 0;
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 0 7%;
+    @media (max-width: 900px) {
+      .services-grid { grid-template-columns: 1fr 1fr; }
     }
-    .services-progress { display: flex; gap: 8px; }
-    .progress-dot {
-      width: 8px; height: 8px; border-radius: 50%;
-      background: rgba(255,255,255,.22); transition: background .3s;
-    }
-    .progress-dot.active { background: var(--sky); }
-    .services-scroll-tip {
-      font-family: var(--f-body); font-size: .7rem; font-weight: 600;
-      letter-spacing: .12em; text-transform: uppercase;
-      color: rgba(255,255,255,.28);
+    @media (max-width: 560px) {
+      .services-grid { grid-template-columns: 1fr; }
     }
 
     /* ── BEFORE / AFTER SLIDER ── */
@@ -705,59 +714,36 @@
     </div>
   </section>
 
-  <!-- HORIZONTAL SCROLL SERVICES -->
-  <section class="services-section" id="services">
-    <div class="services-pin-wrap" id="servicesPinWrap">
-      <div class="services-sticky" id="servicesSticky">
-        <div class="services-track" id="servicesTrack">
-
-          <div class="service-scene">
-            <span class="service-num">01</span>
-            <div class="service-tag">Preventive Care</div>
-            <h3 class="service-name">Cleanings<br/>and checkups</h3>
-            <p class="service-desc">
-              Twice-yearly visits that set the foundation for a lifetime of healthy teeth. Gentle, thorough, and genuinely fun for every age from first tooth to teenage.
-            </p>
-          </div>
-
-          <div class="service-scene">
-            <span class="service-num">02</span>
-            <div class="service-tag">Early Treatment</div>
-            <h3 class="service-name">Cavity<br/>protection</h3>
-            <p class="service-desc">
-              Sealants, fluoride treatments, and space maintainers applied with care. We catch small issues before they become big ones, saving families stress and money.
-            </p>
-          </div>
-
-          <div class="service-scene">
-            <span class="service-num">03</span>
-            <div class="service-tag">Orthodontic Preview</div>
-            <h3 class="service-name">Smile<br/>guidance</h3>
-            <p class="service-desc">
-              Early orthodontic assessments that give parents a clear picture of what lies ahead and what can be prevented with timely, gentle action now.
-            </p>
-          </div>
-
-          <div class="service-scene">
-            <span class="service-num">04</span>
-            <div class="service-tag">Emergency Care</div>
-            <h3 class="service-name">Same-day<br/>urgent visits</h3>
-            <p class="service-desc">
-              Chipped tooth on a Saturday? Knocked-out tooth at 8pm? We keep same-day slots open for kids who need us now, not next week.
-            </p>
-          </div>
-
-        </div>
-
-        <div class="services-footer">
-          <div class="services-progress" id="servicesProgress">
-            <div class="progress-dot active"></div>
-            <div class="progress-dot"></div>
-            <div class="progress-dot"></div>
-            <div class="progress-dot"></div>
-          </div>
-          <div class="services-scroll-tip">Scroll to advance</div>
-        </div>
+  <!-- SERVICES GRID -->
+  <section id="services" class="services-grid-wrap">
+    <div class="services-grid-header">
+      <div class="section-eyebrow">What we do</div>
+      <h2>Everything your child needs,<br/><em>under one joyful roof</em></h2>
+    </div>
+    <div class="services-grid" id="servicesGrid">
+      <div class="service-scene">
+        <span class="service-num">01</span>
+        <div class="service-tag">Preventive Care</div>
+        <h3 class="service-name">Cleanings &amp;<br/>checkups</h3>
+        <p class="service-desc">Twice-yearly visits that set the foundation for a lifetime of healthy teeth. Gentle, thorough, and genuinely fun for every age.</p>
+      </div>
+      <div class="service-scene">
+        <span class="service-num">02</span>
+        <div class="service-tag">Early Treatment</div>
+        <h3 class="service-name">Cavity<br/>protection</h3>
+        <p class="service-desc">Sealants, fluoride treatments, and space maintainers applied with care. We catch small issues before they become big ones.</p>
+      </div>
+      <div class="service-scene">
+        <span class="service-num">03</span>
+        <div class="service-tag">Orthodontic Preview</div>
+        <h3 class="service-name">Smile<br/>guidance</h3>
+        <p class="service-desc">Early orthodontic assessments that give parents a clear picture of what lies ahead and what can be prevented with timely action.</p>
+      </div>
+      <div class="service-scene">
+        <span class="service-num">04</span>
+        <div class="service-tag">Emergency Care</div>
+        <h3 class="service-name">Same-day<br/>urgent visits</h3>
+        <p class="service-desc">Chipped tooth on a Saturday? Knocked-out tooth at 8pm? We keep same-day slots open for kids who need us now, not next week.</p>
       </div>
     </div>
   </section>
@@ -1058,29 +1044,14 @@
     gsap.from('.hero-sub',     { y: 18, opacity: 0, duration: .8, delay: .75 });
     gsap.from('.hero-btns',    { y: 18, opacity: 0, duration: .8, delay: .95 });
 
-    /* ── HORIZONTAL SCROLL SERVICES ── */
-    const servicesTrack = document.getElementById('servicesTrack');
-    const pinWrap = document.getElementById('servicesPinWrap');
-    const dots = document.querySelectorAll('.progress-dot');
-    const SCENE_COUNT = 4;
-
-    // 4 scenes at 50vw each = 200vw total track.
-    // Visible window = 100vw (2 scenes). Total scroll = 200vw - 100vw = 100vw (2 steps of 50vw).
-    const SCROLL_DIST = window.innerWidth * (SCENE_COUNT / 2);
-
-    ScrollTrigger.create({
-      trigger: pinWrap,
-      start: 'top top',
-      end: () => '+=' + SCROLL_DIST,
-      pin: '#servicesSticky',
-      scrub: 1.2,
-      onUpdate: self => {
-        const xPx = -self.progress * SCROLL_DIST;
-        gsap.set(servicesTrack, { x: xPx });
-        // Active dot: which pair is leading (0=scenes 1&2, 1=scenes 2&3, 2=scenes 3&4)
-        const activeIdx = Math.round(self.progress * (SCENE_COUNT - 2));
-        dots.forEach((d, i) => d.classList.toggle('active', i === activeIdx));
-      }
+    /* ── SERVICES GRID stagger reveal ── */
+    gsap.from('#servicesGrid .service-scene', {
+      scrollTrigger: { trigger: '#servicesGrid', start: 'top 80%' },
+      opacity: 0,
+      y: 40,
+      stagger: 0.12,
+      duration: 0.7,
+      ease: 'power3.out'
     });
 
     /* ── BEFORE / AFTER SLIDER ── */
