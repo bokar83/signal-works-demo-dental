@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Smiles Pediatric Dentistry | Salt Lake City, UT</title>
+<meta name="description" content="Bright Smiles Pediatric Dentistry in Salt Lake City, UT. Board-certified pediatric dentists creating a fun, fear-free dental experience for children of all ages.">
+<meta property="og:title" content="Bright Smiles Pediatric Dentistry | Salt Lake City">
+<meta property="og:description" content="Fear-free pediatric dentistry in Salt Lake City. We make smiles sparkle and kids feel brave.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://og.example.com/bright-smiles.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800;900&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Dentist",
+      "@id": "https://brightsmilesdentistry.com/#dentist",
+      "name": "Bright Smiles Pediatric Dentistry",
+      "url": "https://brightsmilesdentistry.com",
+      "telephone": "+1-801-555-0190",
+      "email": "hello@brightsmilesdentistry.com",
+      "description": "Board-certified pediatric dentists providing fear-free dental care for children in Salt Lake City, Utah.",
+      "priceRange": "$$",
+      "image": "https://brightsmilesdentistry.com/images/hero.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2250 South 1300 East, Suite 200",
+        "addressLocality": "Salt Lake City",
+        "addressRegion": "UT",
+        "postalCode": "84106",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 40.7249,
+        "longitude": -111.8634
+      },
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "17:00" },
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "13:00" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/brightsmileslc",
+        "https://www.instagram.com/brightsmileslc"
+      ],
+      "hasMap": "https://maps.google.com/?q=Bright+Smiles+Pediatric+Dentistry+Salt+Lake+City+UT",
+      "areaServed": {
+        "@type": "City",
+        "name": "Salt Lake City"
+      },
+      "medicalSpecialty": "Pediatric Dentistry"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://brightsmilesdentistry.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "At what age should my child first visit the dentist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The American Academy of Pediatric Dentistry recommends a child's first dental visit by their first birthday or within 6 months of their first tooth erupting. Early visits help us establish a dental home and catch any concerns early."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you help anxious or fearful children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We use the 'tell-show-do' technique, child-friendly language, distraction tools like ceiling TVs, and genuine patience. We never rush a child. For higher anxiety, we offer nitrous oxide (laughing gas) sedation as a safe and gentle option."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you accept most dental insurance plans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We accept most major dental insurance plans including Delta Dental, Cigna, Aetna, United Healthcare, and Medicaid. Our team will verify your benefits before your appointment and explain your coverage clearly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services do you offer for children?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We offer comprehensive pediatric dental care including cleanings and exams, fluoride treatments, dental sealants, cavity fillings, tooth extractions, space maintainers, emergency dental care, and orthodontic evaluations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is Bright Smiles visible on AI assistants like ChatGPT and Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! We maintain an optimized online presence so that when parents ask AI tools 'best pediatric dentist near Salt Lake City,' Bright Smiles appears with accurate information, hours, and reviews."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0B1F3A;
+    --navy-mid: #112848;
+    --sky: #5BC8F5;
+    --sky-light: #A8E4F8;
+    --sky-pale: #E8F7FD;
+    --gold: #F5C842;
+    --white: #FAFCFF;
+    --text-dark: #0B1F3A;
+    --text-body: #2C4566;
+    --radius-lg: 24px;
+    --radius-xl: 40px;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: var(--white);
+    color: var(--text-body);
+    overflow-x: hidden;
+    cursor: none;
+  }
+
+  /* Custom cursor */
+  #cursor-dot {
+    position: fixed; top: 0; left: 0; width: 8px; height: 8px;
+    background: var(--sky); border-radius: 50%;
+    pointer-events: none; z-index: 9999;
+    transform: translate(-50%, -50%);
+  }
+  #cursor-ring {
+    position: fixed; top: 0; left: 0; width: 36px; height: 36px;
+    border: 2px solid var(--sky); border-radius: 50%;
+    pointer-events: none; z-index: 9998;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s, border-color 0.2s;
+    opacity: 0.7;
+  }
+  body:has(a:hover) #cursor-ring,
+  body:has(button:hover) #cursor-ring {
+    width: 52px; height: 52px; border-color: var(--gold);
+  }
+
+  /* Nav */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 20px 48px;
+    transition: background 0.3s, backdrop-filter 0.3s;
+  }
+  nav.scrolled {
+    background: rgba(11, 31, 58, 0.96);
+    backdrop-filter: blur(12px);
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 10px;
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem; color: var(--white);
+    text-decoration: none;
+  }
+  .nav-logo .tooth-icon {
+    width: 36px; height: 36px; background: var(--sky);
+    border-radius: 50%; display: flex; align-items: center;
+    justify-content: center; font-size: 20px;
+  }
+  .nav-links { display: flex; gap: 32px; list-style: none; }
+  .nav-links a {
+    color: rgba(255,255,255,0.85); text-decoration: none;
+    font-weight: 700; font-size: 0.9rem; letter-spacing: 0.03em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--sky); }
+  .nav-cta {
+    background: var(--sky); color: var(--navy) !important;
+    padding: 10px 24px; border-radius: 50px; font-weight: 800 !important;
+  }
+  .nav-cta:hover { background: var(--gold) !important; color: var(--navy) !important; }
+
+  /* Hero */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--navy) 0%, #0d2a4a 60%, #133660 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 120px 48px 80px;
+    gap: 60px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-bg-circles {
+    position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+  }
+  .hero-bg-circles span {
+    position: absolute; border-radius: 50%;
+    background: rgba(91, 200, 245, 0.06);
+  }
+  .hero-bg-circles span:nth-child(1) { width: 600px; height: 600px; top: -200px; right: -100px; }
+  .hero-bg-circles span:nth-child(2) { width: 300px; height: 300px; bottom: 50px; left: 10%; }
+  .hero-bg-circles span:nth-child(3) { width: 150px; height: 150px; top: 30%; right: 30%; }
+
+  /* Floating teeth */
+  .floating-teeth { position: absolute; inset: 0; pointer-events: none; }
+  .ft {
+    position: absolute; font-size: 2rem; opacity: 0.15;
+    animation: floatTooth 6s ease-in-out infinite;
+  }
+  .ft:nth-child(1) { top: 15%; left: 5%; animation-delay: 0s; }
+  .ft:nth-child(2) { top: 70%; left: 8%; animation-delay: 1.5s; font-size: 1.5rem; }
+  .ft:nth-child(3) { top: 25%; right: 5%; animation-delay: 0.8s; }
+  .ft:nth-child(4) { bottom: 20%; right: 8%; animation-delay: 2.5s; font-size: 1.2rem; }
+  .ft:nth-child(5) { top: 50%; right: 20%; animation-delay: 1s; font-size: 1rem; }
+
+  @keyframes floatTooth {
+    0%, 100% { transform: translateY(0) rotate(-5deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+  }
+
+  .hero-content { position: relative; z-index: 2; }
+
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: rgba(91, 200, 245, 0.15);
+    border: 1px solid rgba(91, 200, 245, 0.3);
+    color: var(--sky-light); padding: 8px 18px; border-radius: 50px;
+    font-size: 0.82rem; font-weight: 800; letter-spacing: 0.1em;
+    text-transform: uppercase; margin-bottom: 28px;
+  }
+
+  .hero-h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.8rem, 5vw, 4.2rem);
+    color: var(--white); line-height: 1.1;
+    margin-bottom: 24px;
+  }
+  .hero-h1 em { color: var(--sky); font-style: normal; }
+  .hero-h1 .accent-gold { color: var(--gold); }
+
+  .hero-sub {
+    font-size: 1.1rem; color: rgba(255,255,255,0.75);
+    line-height: 1.7; margin-bottom: 40px; max-width: 460px;
+    font-weight: 600;
+  }
+
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+
+  .btn-primary {
+    background: var(--sky); color: var(--navy);
+    padding: 16px 36px; border-radius: 50px; border: none;
+    font-family: 'Nunito', sans-serif; font-weight: 800;
+    font-size: 1rem; cursor: none; text-decoration: none;
+    display: inline-block; transition: transform 0.2s, background 0.2s;
+    position: relative; overflow: hidden;
+  }
+  .btn-primary:hover { background: var(--gold); transform: translateY(-2px); }
+
+  .btn-ghost {
+    background: transparent; color: var(--white);
+    padding: 16px 36px; border-radius: 50px;
+    border: 2px solid rgba(255,255,255,0.3);
+    font-family: 'Nunito', sans-serif; font-weight: 700;
+    font-size: 1rem; cursor: none; text-decoration: none;
+    display: inline-block; transition: border-color 0.2s, color 0.2s;
+  }
+  .btn-ghost:hover { border-color: var(--sky); color: var(--sky); }
+
+  .hero-visual {
+    position: relative; display: flex; align-items: center;
+    justify-content: center; z-index: 2;
+  }
+
+  .hero-blob-wrap {
+    position: relative; width: 480px; height: 480px;
+  }
+
+  .blob-svg {
+    width: 100%; height: 100%; position: absolute; top: 0; left: 0;
+    animation: morphBlob 8s ease-in-out infinite;
+  }
+
+  @keyframes morphBlob {
+    0%   { d: path("M240,50 C340,30 460,100 460,240 C460,360 380,440 240,440 C100,440 30,360 40,240 C50,120 140,70 240,50 Z"); }
+    33%  { d: path("M240,40 C360,20 470,120 450,250 C430,370 340,460 220,450 C100,440 30,340 50,220 C70,100 140,60 240,40 Z"); }
+    66%  { d: path("M250,55 C350,35 470,130 460,255 C450,380 360,450 240,445 C110,440 25,350 35,230 C45,110 145,75 250,55 Z"); }
+    100% { d: path("M240,50 C340,30 460,100 460,240 C460,360 380,440 240,440 C100,440 30,360 40,240 C50,120 140,70 240,50 Z"); }
+  }
+
+  .blob-inner {
+    position: absolute; inset: 30px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #a8e4f8 0%, #5bc8f5 60%, #3ab0e0 100%);
+    display: flex; align-items: center; justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(91,200,245,0.4);
+  }
+
+  .blob-inner-content {
+    text-align: center; padding: 20px;
+  }
+  .blob-inner-content .big-emoji { font-size: 5rem; display: block; }
+  .blob-inner-content .blob-tagline {
+    font-family: 'Amatic SC', cursive;
+    font-size: 1.6rem; color: var(--navy);
+    font-weight: 700; margin-top: 8px; line-height: 1.2;
+  }
+
+  .hero-stat-pills {
+    display: flex; flex-direction: column; gap: 12px;
+    position: absolute; right: -60px; top: 50%;
+    transform: translateY(-50%);
+  }
+  .stat-pill {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50px; padding: 12px 20px;
+    text-align: center; min-width: 110px;
+  }
+  .stat-pill .num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.6rem; color: var(--sky); display: block;
+  }
+  .stat-pill .lbl {
+    font-size: 0.7rem; color: rgba(255,255,255,0.7);
+    font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+  }
+
+  /* Trust bar */
+  .trust-bar {
+    background: var(--sky); padding: 16px 48px;
+    display: flex; align-items: center; justify-content: center;
+    gap: 48px; flex-wrap: wrap;
+  }
+  .trust-item {
+    display: flex; align-items: center; gap: 10px;
+    font-weight: 800; font-size: 0.9rem; color: var(--navy);
+  }
+
+  /* Section common */
+  section { padding: 100px 48px; }
+
+  .section-eyebrow {
+    display: inline-block;
+    font-size: 0.8rem; font-weight: 800; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--sky);
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--text-dark); line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  /* About / Story section */
+  .story {
+    background: var(--white);
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 80px; align-items: center;
+  }
+
+  .story-visual {
+    position: relative;
+  }
+
+  .story-photo-frame {
+    width: 100%; aspect-ratio: 4/5;
+    border-radius: var(--radius-xl);
+    background: linear-gradient(160deg, #b5e8fa 0%, #5bc8f5 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 8rem; position: relative; overflow: hidden;
+  }
+
+  .story-photo-frame::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.3), transparent 60%);
+  }
+
+  .story-badge {
+    position: absolute; bottom: -20px; right: -20px;
+    background: var(--gold); width: 120px; height: 120px;
+    border-radius: 50%; display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    font-family: 'DM Serif Display', serif;
+  }
+  .story-badge .badge-num { font-size: 1.8rem; color: var(--navy); line-height: 1; }
+  .story-badge .badge-txt { font-size: 0.6rem; font-weight: 800; color: var(--navy); text-align: center; line-height: 1.2; text-transform: uppercase; }
+
+  .story-content .section-title { margin-top: 12px; }
+
+  .story-body {
+    font-size: 1.05rem; line-height: 1.8; color: var(--text-body);
+    margin-bottom: 32px;
+  }
+
+  .checkmarks { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+  .checkmarks li {
+    display: flex; align-items: flex-start; gap: 14px;
+    font-weight: 600; font-size: 0.95rem; color: var(--text-dark);
+  }
+  .checkmarks li::before {
+    content: '✓'; flex-shrink: 0;
+    width: 26px; height: 26px; border-radius: 50%;
+    background: var(--sky); color: var(--navy);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 0.85rem;
+  }
+
+  /* Services section */
+  .services { background: var(--navy); }
+  .services .section-eyebrow { color: var(--sky-light); }
+  .services .section-title { color: var(--white); }
+
+  .services-intro {
+    display: flex; align-items: flex-end; justify-content: space-between;
+    gap: 40px; margin-bottom: 60px;
+  }
+
+  .services-intro p {
+    color: rgba(255,255,255,0.7); font-size: 1rem; line-height: 1.7;
+    max-width: 500px;
+  }
+
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+
+  .service-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(91,200,245,0.15);
+    border-radius: var(--radius-lg); padding: 36px 28px;
+    transition: transform 0.3s, background 0.3s, border-color 0.3s;
+    cursor: none;
+  }
+  .service-card:hover {
+    transform: translateY(-8px);
+    background: rgba(91,200,245,0.1);
+    border-color: rgba(91,200,245,0.4);
+  }
+
+  .service-icon {
+    font-size: 2.5rem; margin-bottom: 20px; display: block;
+    filter: drop-shadow(0 0 10px rgba(91,200,245,0.4));
+  }
+
+  .service-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.25rem; color: var(--white); margin-bottom: 10px;
+  }
+
+  .service-desc { font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.6; }
+
+  /* Wave divider */
+  .wave-divider { display: block; width: 100%; overflow: hidden; line-height: 0; }
+  .wave-divider svg { display: block; width: 100%; }
+
+  /* FAQ */
+  .faq { background: var(--sky-pale); }
+
+  .faq-layout { display: grid; grid-template-columns: 1fr 1.6fr; gap: 80px; align-items: start; }
+
+  .faq-intro p { font-size: 1rem; line-height: 1.7; color: var(--text-body); margin-top: 16px; }
+
+  .faq-list { display: flex; flex-direction: column; gap: 4px; }
+
+  .faq-item {
+    background: var(--white); border-radius: 16px;
+    border: 1px solid rgba(91,200,245,0.2);
+    overflow: hidden;
+    transition: box-shadow 0.2s;
+  }
+  .faq-item:hover { box-shadow: 0 4px 20px rgba(91,200,245,0.2); }
+
+  .faq-question {
+    width: 100%; background: none; border: none; cursor: none;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 26px; text-align: left;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem; font-weight: 800; color: var(--text-dark);
+    gap: 16px;
+  }
+
+  .faq-icon {
+    width: 28px; height: 28px; flex-shrink: 0;
+    background: var(--sky); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1rem; color: var(--navy); font-weight: 900;
+    transition: transform 0.3s, background 0.3s;
+  }
+  .faq-item.open .faq-icon { transform: rotate(45deg); background: var(--navy); color: var(--white); }
+
+  .faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s;
+    padding: 0 26px;
+  }
+  .faq-item.open .faq-answer { max-height: 300px; padding: 0 26px 22px; }
+  .faq-answer p { font-size: 0.95rem; line-height: 1.7; color: var(--text-body); }
+
+  /* Reviews */
+  .reviews { background: var(--white); overflow: hidden; }
+
+  .reviews-header { text-align: center; margin-bottom: 60px; }
+
+  .reviews-marquee {
+    display: flex; gap: 24px; width: max-content;
+    animation: marquee 30s linear infinite;
+  }
+  .reviews-marquee:hover { animation-play-state: paused; }
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .review-card {
+    flex-shrink: 0; width: 320px;
+    background: var(--sky-pale); border-radius: var(--radius-lg);
+    padding: 28px; border: 1px solid rgba(91,200,245,0.2);
+  }
+
+  .review-stars { color: var(--gold); font-size: 1.1rem; margin-bottom: 14px; }
+  .review-text { font-size: 0.9rem; line-height: 1.6; color: var(--text-body); margin-bottom: 16px; font-style: italic; }
+  .review-author { font-weight: 800; font-size: 0.85rem; color: var(--text-dark); }
+  .review-sub { font-size: 0.78rem; color: rgba(44,69,102,0.6); }
+
+  /* CTA */
+  .cta-section {
+    background: linear-gradient(135deg, var(--navy) 0%, #0d2a4a 100%);
+    text-align: center; padding: 120px 48px;
+    position: relative; overflow: hidden;
+  }
+  .cta-section::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at center, rgba(91,200,245,0.15) 0%, transparent 70%);
+  }
+  .cta-section .section-title { color: var(--white); position: relative; }
+  .cta-section p { color: rgba(255,255,255,0.75); font-size: 1.1rem; margin: 20px auto 40px; max-width: 540px; position: relative; }
+  .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
+
+  .contact-info-bar {
+    display: flex; gap: 40px; justify-content: center;
+    margin-top: 48px; flex-wrap: wrap; position: relative;
+  }
+  .contact-chip {
+    display: flex; align-items: center; gap: 10px;
+    color: rgba(255,255,255,0.85); font-weight: 700; font-size: 0.9rem;
+  }
+  .contact-chip span { font-size: 1.1rem; }
+
+  /* Footer */
+  footer {
+    background: #07131f; color: rgba(255,255,255,0.6);
+    padding: 48px; display: flex;
+    align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+  }
+  footer a { color: var(--sky); text-decoration: none; }
+  .footer-logo {
+    font-family: 'DM Serif Display', serif; font-size: 1.2rem;
+    color: var(--white);
+  }
+  .footer-links { display: flex; gap: 24px; flex-wrap: wrap; font-size: 0.85rem; }
+  .footer-copy { font-size: 0.8rem; }
+
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; padding: 140px 32px 80px; }
+    .hero-visual { display: none; }
+    .story { grid-template-columns: 1fr; gap: 48px; padding: 80px 32px; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .faq-layout { grid-template-columns: 1fr; }
+    nav { padding: 18px 32px; }
+    .hero-stat-pills { display: none; }
+  }
+
+  @media (max-width: 768px) {
+    nav { padding: 16px 24px; }
+    .nav-links { display: none; }
+    section { padding: 72px 24px; }
+    .hero { padding: 120px 24px 72px; }
+    .hero-actions { flex-direction: column; }
+    .btn-primary, .btn-ghost { text-align: center; }
+    .services-grid { grid-template-columns: 1fr; }
+    .trust-bar { padding: 14px 24px; gap: 20px; }
+    .reviews-marquee { animation-duration: 20s; }
+    .cta-section { padding: 80px 24px; }
+    footer { flex-direction: column; text-align: center; padding: 40px 24px; }
+    .footer-links { justify-content: center; }
+    .services-intro { flex-direction: column; align-items: flex-start; }
+    .contact-info-bar { flex-direction: column; align-items: center; gap: 16px; }
+  }
+
+  @media (max-width: 375px) {
+    .hero-h1 { font-size: 2.2rem; }
+    .section-title { font-size: 1.8rem; }
+    .story-photo-frame { aspect-ratio: 1/1; font-size: 5rem; }
+    .hero-eyebrow { font-size: 0.7rem; }
+  }
+</style>
+</head>
+<body>
+
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- Nav -->
+<nav id="main-nav">
+  <a href="#" class="nav-logo">
+    <div class="tooth-icon">🦷</div>
+    Bright Smiles
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">Our Story</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#faq">FAQ</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact" class="nav-cta">Book Visit</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg-circles">
+    <span></span><span></span><span></span>
+  </div>
+  <div class="floating-teeth" aria-hidden="true">
+    <span class="ft">🦷</span>
+    <span class="ft">⭐</span>
+    <span class="ft">🦷</span>
+    <span class="ft">✨</span>
+    <span class="ft">⭐</span>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span>📍</span> Salt Lake City, Utah
+    </div>
+    <h1 class="hero-h1" id="hero-heading">
+      Where <em>Little Smiles</em> Become <span class="accent-gold">Big Memories</span>
+    </h1>
+    <p class="hero-sub">
+      Board-certified pediatric dentists who turn dental visits into something your kids actually look forward to. Fear-free, fun, and always gentle.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Book a Free First Visit</a>
+      <a href="tel:+18015550190" class="btn-ghost">Call (801) 555-0190</a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="hero-blob-wrap">
+      <svg class="blob-svg" viewBox="0 0 480 480" xmlns="http://www.w3.org/2000/svg">
+        <path fill="rgba(91,200,245,0.15)" d="M240,50 C340,30 460,100 460,240 C460,360 380,440 240,440 C100,440 30,360 40,240 C50,120 140,70 240,50 Z"/>
+      </svg>
+      <div class="blob-inner">
+        <div class="blob-inner-content">
+          <span class="big-emoji">😄</span>
+          <div class="blob-tagline">Happy Kids,<br>Happy Parents</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-stat-pills">
+      <div class="stat-pill">
+        <span class="num">2,400+</span>
+        <span class="lbl">Happy Kids</span>
+      </div>
+      <div class="stat-pill">
+        <span class="num">4.9★</span>
+        <span class="lbl">Google Rating</span>
+      </div>
+      <div class="stat-pill">
+        <span class="num">12yr</span>
+        <span class="lbl">In Practice</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trust bar -->
+<div class="trust-bar">
+  <div class="trust-item">🎓 Board-Certified Pediatric Dentists</div>
+  <div class="trust-item">😊 Fear-Free Approach</div>
+  <div class="trust-item">💳 Most Insurance Accepted</div>
+  <div class="trust-item">⚡ Same-Day Emergency Care</div>
+</div>
+
+<!-- Story -->
+<section class="story" id="about">
+  <div class="story-visual">
+    <div class="story-photo-frame">🦷</div>
+    <div class="story-badge">
+      <span class="badge-num">12</span>
+      <span class="badge-txt">Years of Bright Smiles</span>
+    </div>
+  </div>
+  <div class="story-content">
+    <span class="section-eyebrow">Our Story</span>
+    <h2 class="section-title">Dentistry Designed Around Your Child, Not the Other Way Around</h2>
+    <p class="story-body">
+      We started Bright Smiles because we knew pediatric dentistry could feel less like a chore and more like a highlight of the week. Our office is built from the floor up for kids: from the jellyfish aquarium in the lobby to the ceiling TVs above every chair. Every detail is intentional.
+    </p>
+    <p class="story-body">
+      Dr. Maya Chen and her team have served over 2,400 Salt Lake City families, and we're just getting started. We believe the habits formed here last a lifetime.
+    </p>
+    <ul class="checkmarks">
+      <li>Specially trained in child psychology and behavior management</li>
+      <li>Nitrous oxide sedation for anxious patients</li>
+      <li>Fully digital X-rays with 90% less radiation</li>
+      <li>Online scheduling in under 2 minutes</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Wave divider -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C360,0 1080,60 1440,30 L1440,60 L0,60 Z" fill="#0B1F3A"/>
+  </svg>
+</div>
+
+<!-- Services -->
+<section class="services" id="services">
+  <div class="services-intro">
+    <div>
+      <span class="section-eyebrow">What We Do</span>
+      <h2 class="section-title">Complete Care for Every Stage of Childhood</h2>
+    </div>
+    <p>From baby's first tooth to teenage wisdom teeth, we're with your family through every milestone.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🔍</span>
+      <div class="service-name">Exams & Cleanings</div>
+      <p class="service-desc">Thorough preventive care with gentle hygienists who make cleanings feel like an adventure.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🛡️</span>
+      <div class="service-name">Sealants & Fluoride</div>
+      <p class="service-desc">Protective treatments that create an invisible armor against cavities for years to come.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💊</span>
+      <div class="service-name">Cavity Treatment</div>
+      <p class="service-desc">Gentle fillings using tooth-colored materials. Kids often barely notice we did anything.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">😴</span>
+      <div class="service-name">Sedation Dentistry</div>
+      <p class="service-desc">Safe laughing gas (nitrous oxide) sedation for anxious children or complex procedures.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🦷</span>
+      <div class="service-name">Space Maintainers</div>
+      <p class="service-desc">Preserve proper spacing when baby teeth are lost early, setting the stage for straight adult teeth.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🚨</span>
+      <div class="service-name">Emergency Care</div>
+      <p class="service-desc">Same-day appointments for chipped teeth, toothaches, and dental emergencies. Call us first.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Wave divider up -->
+<div class="wave-divider">
+  <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,30 C360,60 1080,0 1440,30 L1440,0 L0,0 Z" fill="#0B1F3A"/>
+  </svg>
+</div>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="faq-layout">
+    <div class="faq-intro">
+      <span class="section-eyebrow">FAQ</span>
+      <h2 class="section-title">Parents Ask. We Answer.</h2>
+      <p>No dental jargon. No confusing explanations. Just honest answers from people who genuinely love caring for kids.</p>
+    </div>
+    <div class="faq-list" id="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          At what age should my child first visit the dentist?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>The American Academy of Pediatric Dentistry recommends a child's first dental visit by their first birthday or within 6 months of their first tooth erupting. Early visits help us establish a dental home and catch any concerns early.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do you help anxious or fearful children?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>We use the 'tell-show-do' technique, child-friendly language, ceiling TVs, and genuine patience. We never rush a child. For higher anxiety, we offer nitrous oxide (laughing gas) sedation as a safe and gentle option.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do you accept most dental insurance plans?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! We accept most major dental insurance plans including Delta Dental, Cigna, Aetna, United Healthcare, and Medicaid. Our team will verify your benefits before your appointment and explain your coverage clearly.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What services do you offer for children?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>We offer comprehensive care including cleanings and exams, fluoride treatments, sealants, cavity fillings, tooth extractions, space maintainers, emergency dental care, and orthodontic evaluations.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is Bright Smiles visible on AI assistants like ChatGPT?
+          <div class="faq-icon">+</div>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! We maintain an optimized online presence so that when parents ask AI tools "best pediatric dentist near Salt Lake City," Bright Smiles appears with accurate information, hours, and reviews.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews marquee -->
+<section class="reviews" id="reviews">
+  <div class="reviews-header">
+    <span class="section-eyebrow">Reviews</span>
+    <h2 class="section-title">4.9 Stars Across 312 Reviews</h2>
+  </div>
+  <div style="overflow:hidden;">
+    <div class="reviews-marquee" id="reviews-marquee">
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"My daughter used to cry before every dental appointment. Now she asks when she gets to go back to Bright Smiles. Genuinely magical."</p>
+        <div class="review-author">Sarah M.</div>
+        <div class="review-sub">Mom of 3, Holladay</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Dr. Chen is phenomenal with kids. My son has sensory issues and she adapted her whole approach without us even asking. That's real expertise."</p>
+        <div class="review-author">Marcus T.</div>
+        <div class="review-sub">Parent, Sandy, UT</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The office is like a theme park for kids. They have an aquarium, ceiling TVs, and the friendliest staff I've ever encountered at a dentist."</p>
+        <div class="review-author">Priya K.</div>
+        <div class="review-sub">Mom, Sugar House</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We had a dental emergency on a Saturday and they saw us within 2 hours. The tooth was saved. We are customers for life."</p>
+        <div class="review-author">James R.</div>
+        <div class="review-sub">Dad, Draper</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Insurance was confusing and their front desk spent 20 minutes walking us through everything. Above and beyond. This place is special."</p>
+        <div class="review-author">Amber L.</div>
+        <div class="review-sub">Parent, Murray</div>
+      </div>
+      <!-- Duplicate for seamless loop -->
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"My daughter used to cry before every dental appointment. Now she asks when she gets to go back to Bright Smiles. Genuinely magical."</p>
+        <div class="review-author">Sarah M.</div>
+        <div class="review-sub">Mom of 3, Holladay</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Dr. Chen is phenomenal with kids. My son has sensory issues and she adapted her whole approach without us even asking. That's real expertise."</p>
+        <div class="review-author">Marcus T.</div>
+        <div class="review-sub">Parent, Sandy, UT</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"The office is like a theme park for kids. They have an aquarium, ceiling TVs, and the friendliest staff I've ever encountered at a dentist."</p>
+        <div class="review-author">Priya K.</div>
+        <div class="review-sub">Mom, Sugar House</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"We had a dental emergency on a Saturday and they saw us within 2 hours. The tooth was saved. We are customers for life."</p>
+        <div class="review-author">James R.</div>
+        <div class="review-sub">Dad, Draper</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Insurance was confusing and their front desk spent 20 minutes walking us through everything. Above and beyond. This place is special."</p>
+        <div class="review-author">Amber L.</div>
+        <div class="review-sub">Parent, Murray</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <h2 class="section-title">Your Child's Best Smile Starts Here</h2>
+  <p>New patients welcome. Most insurance accepted. Scheduling takes under 2 minutes.</p>
+  <div class="cta-actions">
+    <a href="tel:+18015550190" class="btn-primary">Call (801) 555-0190</a>
+    <a href="mailto:hello@brightsmilesdentistry.com" class="btn-ghost">Send Us a Message</a>
+  </div>
+  <div class="contact-info-bar">
+    <div class="contact-chip"><span>📍</span> 2250 S 1300 E, Suite 200, Salt Lake City, UT 84106</div>
+    <div class="contact-chip"><span>🕐</span> Mon-Thu 8am-5pm &nbsp;|&nbsp; Fri 8am-1pm</div>
+    <div class="contact-chip"><span>⭐</span> 4.9 stars on Google</div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-logo">🦷 Bright Smiles Pediatric Dentistry</div>
+  <div class="footer-links">
+    <a href="#about">Our Story</a>
+    <a href="#services">Services</a>
+    <a href="#faq">FAQ</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2025 Bright Smiles Pediatric Dentistry. Salt Lake City, UT.</div>
+</footer>
+
+<script>
+gsap.registerPlugin(ScrollTrigger, SplitText);
+
+// Custom cursor
+const dot = document.getElementById('cursor-dot');
+const ring = document.getElementById('cursor-ring');
+let mx = 0, my = 0, rx = 0, ry = 0;
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; });
+function animCursor() {
+  dot.style.left = mx + 'px'; dot.style.top = my + 'px';
+  rx += (mx - rx) * 0.12; ry += (my - ry) * 0.12;
+  ring.style.left = rx + 'px'; ring.style.top = ry + 'px';
+  requestAnimationFrame(animCursor);
+}
+animCursor();
+
+// Nav scroll
+window.addEventListener('scroll', () => {
+  document.getElementById('main-nav').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Hero heading SplitText
+const heroHeading = document.getElementById('hero-heading');
+if (heroHeading) {
+  const split = new SplitText(heroHeading, { type: 'chars,words' });
+  gsap.from(split.chars, {
+    opacity: 0, y: 60, rotateX: -40,
+    stagger: 0.02, duration: 0.8, ease: 'back.out(1.7)',
+    delay: 0.3
+  });
+}
+
+// Services card scroll stagger
+gsap.from('.service-card', {
+  scrollTrigger: { trigger: '.services-grid', start: 'top 80%' },
+  opacity: 0, y: 50, stagger: 0.1, duration: 0.6, ease: 'power2.out'
+});
+
+// Story section clip-path reveal
+gsap.from('.story-photo-frame', {
+  scrollTrigger: { trigger: '.story', start: 'top 70%' },
+  clipPath: 'inset(100% 0 0 0)',
+  duration: 0.9, ease: 'power3.out'
+});
+
+gsap.from('.story-content > *', {
+  scrollTrigger: { trigger: '.story-content', start: 'top 75%' },
+  opacity: 0, x: 40, stagger: 0.15, duration: 0.7, ease: 'power2.out'
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-question').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  });
+});
+
+// CTA section parallax text
+gsap.from('.cta-section .section-title', {
+  scrollTrigger: { trigger: '.cta-section', start: 'top 80%' },
+  opacity: 0, y: 40, duration: 0.8, ease: 'power2.out'
+});
+
+// Magnetic buttons
+document.querySelectorAll('.btn-primary, .btn-ghost, .nav-cta').forEach(btn => {
+  btn.addEventListener('mousemove', e => {
+    const r = btn.getBoundingClientRect();
+    const x = e.clientX - r.left - r.width / 2;
+    const y = e.clientY - r.top - r.height / 2;
+    gsap.to(btn, { x: x * 0.25, y: y * 0.25, duration: 0.3, ease: 'power2.out' });
+  });
+  btn.addEventListener('mouseleave', () => {
+    gsap.to(btn, { x: 0, y: 0, duration: 0.5, ease: 'elastic.out(1, 0.5)' });
+  });
+});
+
+// Checkmarks stagger
+gsap.from('.checkmarks li', {
+  scrollTrigger: { trigger: '.checkmarks', start: 'top 80%' },
+  opacity: 0, x: -30, stagger: 0.1, duration: 0.5, ease: 'power2.out'
+});
+
+// FAQ items stagger
+gsap.from('.faq-item', {
+  scrollTrigger: { trigger: '.faq-list', start: 'top 80%' },
+  opacity: 0, y: 30, stagger: 0.08, duration: 0.5, ease: 'power2.out'
+});
+</script>
+
+</body>
+</html>
